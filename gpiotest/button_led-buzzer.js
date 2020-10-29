@@ -1,7 +1,7 @@
 
 const Gpio = require('onoff').Gpio;
-const LED = new Gpio(4, 'out');
-const pushButton = new Gpio(17, 'in', 'both', {debounceTimeout: 10});
+const LED = new Gpio(17, 'out');
+const pushButton = new Gpio(18, 'in', 'both', {debounceTimeout: 10});
 
 pushButton.watch(function (err, value) {
   console.log(value)
